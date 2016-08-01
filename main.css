@@ -2,8 +2,118 @@ h1 {
 	font-size: 50px;
 }
 
+body {
+	color: rgba(0,0,150,1);
+	background-image: url("http://wallpapercave.com/wp/UTEF6XR.png");
+	background-position: 70% 70%;
+	background-repeat: repeat;
+}
+
+button {
+	font-size: 25px;
+}
+
+#one {
+	background-color: red;
+}
+
+#two {
+	background-color: orange;
+}
+
+#three {
+	background-color: yellow;
+}
+
+#four {
+	background-color: lightgreen;
+}
+
+#five {
+	background-color: lightblue;
+}
+
+.grade {
+	/*border: solid black 1px;*/
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.title {
+	/*border: solid black 1px;*/
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
 .game {
-	width: 400px;
-	height: 400px;
-	border: 1px black solid;
+	font-family: 'Quantico', sans-serif;
+	border: solid black 8px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 750px;
+	height: 500px;
+	background-image: url("http://static.tumblr.com/171ea4dd15bf205c994daecad8959d54/skxeuni/EgUni6ony/tumblr_static_afy08s80ivc4gsgwgwgo0w84k.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.pokeball, .pokeballVowel {
+	width: 75px;
+	height: 75px;
+	background-image: url("https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG");
+	background-size: contain;
+	opacity: 0.5;
+	line-height: 60px;
+	font-size: 20px;
+}
+
+.pokeball span, .pokeballVowel span {
+	font-weight: bolder;
+	opacity: 1 !important;
+}
+
+.pokeball {
+	margin-top: 150px;
+  margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.pokeballButtons {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.pokeballVowel {
+	margin-top: 20px;
+  margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 50px;
+	display: inline-block;
+	text-align: center;
+}
+
+#sentence {
+	font-size: 30px;
+	text-align: center;
+	margin: 100px auto 0px auto;
+}
+
+#character {
+	width: 200px;
+	height: 200px;
+	background-size: contain;
+	margin: 100px auto 0px auto;
+}
+
+#beforescore {
+	text-align: left;
+	margin-left: 5px;
 }

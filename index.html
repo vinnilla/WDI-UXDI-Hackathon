@@ -5,31 +5,46 @@
 	<title>Project</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Quantico:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+<div class="background">
 	<div class="container-fluid">
 		<div class="row">
-			<button>1st Grade</button>
-			<button>2nd Grade</button>
-			<button>3rd Grade</button>
-			<button>4th Grade</button>
-			<button>5th Grade</button>
+			<div class="grade">
+				<button id="one">1st Grade</button>
+				<button id="two">2nd Grade</button>
+				<button id="three">3rd Grade</button>
+				<button id="four">4th Grade</button>
+				<button id="five">5th Grade</button>
+			</div>
 		</div>
 		<div class="row">
-			<h1>POKE-WORD</h1>
+			<div class="title">
+				<h1>Squirtle's Wordles</h1>
+			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid game">
-		<div class="row">
-			<button class="vowel">a</button>
-			<button class="vowel">e</button>
-			<button class="vowel">i</button>
-			<button class="vowel">o</button>
-			<button class="vowel">u</button>
-		</div>
+		<!-- Gamebox -->
+	<div class="game">
+		<h3 id="beforescore">Captured: <span id="score">0</span></h3>
+		<h1 id="sentence"></h1>
+		<div class="pokeball"><span>START</span></div>
+		<div id="character"></div>
 	</div>
+
+	<!-- Vowel Buttons -->
+	<div class=pokeballButtons>
+		<div class="pokeballVowel"><span>A</span></div>
+		<div class="pokeballVowel"><span>E</span></div>
+		<div class="pokeballVowel"><span>I</span></div>
+		<div class="pokeballVowel"><span>O</span></div>
+		<div class="pokeballVowel"><span>U</span></div>
+	</div>
+
+</div>
 	
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 	<script src="script.js"></script>
