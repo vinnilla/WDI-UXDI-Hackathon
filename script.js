@@ -6,11 +6,20 @@ var $vowelButtons = $(".vowel");
 var $start = $("#start");
 //global variables
 var vowel = '';
+var sentence = '';
 var score = 0;
 
 //add event listeners to vowel buttons
 $vowelButtons.on('click', retrieveVowel)
 $start.on('click', createSentence)
+
+//create sentence from word banks
+function createSentence() {
+	subjectIndex = Math.floor(Math.random()*array.length);
+	verbIndex = Math.floor(Math.random()*array.length);
+	objectIndex = Math.floor(Math.random()*array.length);
+	sentence = 	
+}
 
 //selecting vowel
 function retrieveVowel(e) {
@@ -37,8 +46,4 @@ function reward(test) {
 	if (test) {
 		score++;
 	}
-}
-
-function createSentence() {
-
 }
