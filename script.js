@@ -8,11 +8,11 @@ var $sentence = $("#sentence");
 var $score = $("#score");
 var $character = $("#character");
 //global variables
-var nouns = ["couch", "brother", "door", "cat", "girl", "boy", "sister", "prince", "queen", "lion", "mouse", "turtle", "store", "beach", "house", "pillow", "watch"]
+var nouns = ["brother", "cat", "girl", "boy", "sister", "prince", "queen", "lion", "mouse", "turtle", "trainer"]
 var adjectives =["brave", "bright", "calm", "strong", "nice", "honest", "grateful", "proud", "wild", "wise", "excited", "slim", "fair", "great", "smart", "fresh", "new", "blue", "green", "fast"]
-var prepositions = ["over", "with", "below", "like", "before", "after", "around", "toward", "without", "behind"]
-var verbs = ["danced", "laughed", "bounced", "shouted", "jumped", "swam", "kicked", "skipped", "walked", "ran", "jogged", "cried"]
-var brokenVerbs = ["d_nced", "la_ghed", "b_unced", "sho_ted", "j_mped", "sw_m", "k_cked", "sk_pped", "w_lked", "r_n", "j_gged", "cr_ed"]
+var prepositions = ["with"]
+var verbs = ["danced", "laughed", "bounced", "shouted", "jumped", "swam", "skipped", "walked", "ran", "jogged", "cried", "complained", "spoke", "traveled", "read", "fought", "wrestled", "wrote", "dreamt", "played", "shared"]
+var brokenVerbs = ["d_nced", "la_ghed", "b_unced", "sho_ted", "j_mped", "sw_m", "sk_pped", "w_lked", "r_n", "j_gged", "cr_ed", "c_mplained", "sp_ke", "tr_veled", "r_ad", "f_ught", "wr_stled", "wr_te", "dr_amt", "pl_yed", "sh_red"]
 var charNames = ["Bulbasaur", "Charmander", "Squirtle", "Pikachu"]
 var charImages = ["url('http://media.pldh.net/pokemon/gen5/blackwhite/001.png')",
 	"url('http://media.pldh.net/pokemon/gen5/blackwhite/004.png')",
