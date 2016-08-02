@@ -4,10 +4,10 @@ Squirtle Wordles
 https://vinnilla.github.io/WDI-UXDI-Hackathon/
 
 UX Designers: 
-	Temoor
+	Temoor: Temoorwasim.com,
 	Russell
 
 Web Developers: 
-	Amanda: https://github.com/albeaudin
-	Corbin: https://github.com/corbout
+	Amanda: https://github.com/albeaudin,
+	Corbin: https://github.com/corbout,
 	Vincent: https://github.com/vinnilla
