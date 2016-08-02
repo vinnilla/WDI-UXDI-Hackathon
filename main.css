@@ -116,9 +116,10 @@ button {
 
 #character {
 	width: 250px;
-	height: 250px;
+	height: 350px;
 	background-size: contain;
-	margin: 30px auto 0px auto;
+	background-repeat: no-repeat;
+	margin: 60px auto 0px auto;
 }
 
 #beforescore {
