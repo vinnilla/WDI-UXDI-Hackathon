@@ -5,7 +5,7 @@ h1 {
 body {
 	color: rgba(0,0,0,1);
 	background-image: url("http://wallpapercave.com/wp/UTEF6XR.png");
-	background-position: 76% 76%;
+	background-position: 57% 57%;
 	background-repeat: no-repeat;
 	background-color: rgba(0,115,0,0.56);	
 	font-family: 'Press Start 2P', cursive;
@@ -70,7 +70,7 @@ button {
 	background-image: url("http://static.tumblr.com/171ea4dd15bf205c994daecad8959d54/skxeuni/EgUni6ony/tumblr_static_afy08s80ivc4gsgwgwgo0w84k.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 130%;
 }
 
 .pokeball, .pokeballVowel {
