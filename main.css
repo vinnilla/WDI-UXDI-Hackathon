@@ -5,7 +5,7 @@ h1 {
 body {
 	color: rgba(0,0,0,1);
 	background-image: url("images/background.png");
-	background-position: 57% 57%;
+	background-position: 32% 32%;
 	background-repeat: no-repeat;
 	background-color: rgba(0,115,0,0.56);	
 	font-family: 'Press Start 2P', cursive;
@@ -67,7 +67,8 @@ button {
 	margin-bottom: 20px;
 	width: 750px;
 	height: 500px;
-	background-image: url("images/game.jpg");
+	background: url("images/game.jpg");
+	/*background-color: rgba(255,255,255,0.2);*/
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 130%;
@@ -86,7 +87,7 @@ button {
 }
 
 .pokeball {
-	margin-top: 150px;
+	margin-top: 100px;
   margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -111,7 +112,7 @@ button {
 #sentence {
 	font-size: 25px;
 	text-align: center;
-	margin: 120px auto 0px auto;
+	margin: 70px auto 0px auto;
 }
 
 #character {
@@ -127,4 +128,8 @@ button {
 	text-align: left;
 	margin-left: 20px;
 	margin-top: 20px;
+}
+
+#missed {
+	margin-left: 47px;
 }

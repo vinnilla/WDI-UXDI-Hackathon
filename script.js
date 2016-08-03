@@ -1,12 +1,13 @@
 console.log('script is running')
 
 //jQuery pointers
-var $instructions = $("#instructions");
 var $vowelButtons = $(".pokeballVowel");
+$vowelButtons.hide();
 var $start = $(".pokeball");
 var $sentence = $("#sentence");
 var $score = $("#score");
 var $character = $("#character");
+var $missed = $("#missed");
 //global variables
 var nouns = ["brother", "cat", "girl", "boy", "sister", "prince", "queen", "lion", "mouse", "turtle", "trainer"]
 var adjectives =["brave", "bright", "calm", "strong", "nice", "honest", "grateful", "proud", "wild", "wise", "excited", "slim", "fair", "great", "smart", "fresh", "new", "blue", "green", "fast"]
@@ -170,6 +171,7 @@ var vowel = '';
 var word = '';
 var check = '';
 var score = 0;
+var missed = 0;
 
 // for testing all pokemon
 // var counter = 0;
@@ -180,6 +182,7 @@ $start.on('click', start)
 function start() {
 	createSentence();
 	$start.hide();
+	$vowelButtons.show();
 	$vowelButtons.on('click', retrieveVowel)
 }
 
@@ -197,6 +200,9 @@ function createSentence() {
 	word = brokenVerbs[verbIndex];
 	check = verbs[verbIndex];
 	// counter++;
+	//remove pokemon
+	charNames.splice(subjectIndex,1);
+	charImages.splice(subjectIndex,1);
 }
 
 //selecting vowel
@@ -205,6 +211,7 @@ function retrieveVowel(e) {
 	var test = checkWord();
 	reward(test);
 	createSentence();
+	end();
 }
 
 //compare word to word bank
@@ -227,5 +234,18 @@ function reward(test) {
 	if (test) {
 		score++;
 		$score.text(score);
+	}
+	else {
+		missed++;
+		$missed.text(missed);
+	}
+}
+
+function end() {
+	if (charNames.length == 0) {
+		$vowelButtons.hide();
+		$character.hide();
+		$sentence.text("GAME OVER");
+		$('.game').css('opacity', 0.5);
 	}
 }
