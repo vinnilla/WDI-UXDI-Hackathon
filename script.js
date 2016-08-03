@@ -137,7 +137,7 @@ var charImages =
 	"url('images/staryu.gif')",
 	"url('images/starmie.gif')",
 	"url('images/mr-mime.gif')",
-	"url('images/scyther-f.gif')",
+	"url('images/scyther.gif')",
 	"url('images/jynx.gif')",
 	"url('images/electabuzz.gif')",
 	"url('images/magmar.gif')",
@@ -172,7 +172,7 @@ var check = '';
 var score = 0;
 
 // for testing all pokemon
-var counter = 0;
+// var counter = 0;
 
 //add event listeners to vowel buttons
 $start.on('click', start)
@@ -190,13 +190,13 @@ function createSentence() {
 	prepIndex = Math.floor(Math.random()*prepositions.length);	
 	adjectiveIndex = Math.floor(Math.random()*adjectives.length);
 	objectIndex = Math.floor(Math.random()*nouns.length);
-	$sentence.text(charNames[counter] + ' ' + brokenVerbs[verbIndex] + ' ' +
+	$sentence.text(charNames[subjectIndex] + ' ' + brokenVerbs[verbIndex] + ' ' +
 		prepositions[prepIndex] + ' the ' + adjectives[adjectiveIndex] + ' ' +
 		nouns[objectIndex]+ '.');
-	$character.css("background-image", charImages[counter]);
+	$character.css("background-image", charImages[subjectIndex]);
 	word = brokenVerbs[verbIndex];
 	check = verbs[verbIndex];
-	counter++;
+	// counter++;
 }
 
 //selecting vowel
