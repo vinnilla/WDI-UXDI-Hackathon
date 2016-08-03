@@ -176,37 +176,40 @@ var missed = 0;
 // for testing all pokemon
 // var counter = 0;
 
-//add event listeners to vowel buttons
 $start.on('click', start)
-
 function start() {
 	createSentence();
 	$start.hide();
 	$vowelButtons.show();
+	//add event listeners to vowel buttons
 	$vowelButtons.on('click', retrieveVowel)
 }
 
 //create sentence from word banks
 function createSentence() {
+	//randomize words taken from word banks
 	subjectIndex = Math.floor(Math.random()*charNames.length);
 	verbIndex = Math.floor(Math.random()*brokenVerbs.length);
 	prepIndex = Math.floor(Math.random()*prepositions.length);	
 	adjectiveIndex = Math.floor(Math.random()*adjectives.length);
 	objectIndex = Math.floor(Math.random()*nouns.length);
+	//form sentence
 	$sentence.text(charNames[subjectIndex] + ' ' + brokenVerbs[verbIndex] + ' ' +
 		prepositions[prepIndex] + ' the ' + adjectives[adjectiveIndex] + ' ' +
 		nouns[objectIndex]+ '.');
+	//show correct character
 	$character.css("background-image", charImages[subjectIndex]);
 	word = brokenVerbs[verbIndex];
 	check = verbs[verbIndex];
 	// counter++;
-	//remove pokemon
+	//remove character name and image from array
 	charNames.splice(subjectIndex,1);
 	charImages.splice(subjectIndex,1);
 }
 
 //selecting vowel
 function retrieveVowel(e) {
+	//retrieve
 	vowel = e.target.innerHTML.toLowerCase();
 	var test = checkWord();
 	reward(test);
@@ -223,14 +226,11 @@ function checkWord() {
 	if (word == check) {
 		correct = true;
 	}
-	console.log(word)
-	console.log(check)
 	return correct;
 }
 
 //game logic
 function reward(test) {
-	console.log(test)
 	if (test) {
 		score++;
 		$score.text(score);
@@ -246,6 +246,6 @@ function end() {
 		$vowelButtons.hide();
 		$character.hide();
 		$sentence.text("GAME OVER");
-		$('.game').css('opacity', 0.5);
+		$('.game').css('background-image', "url('')");
 	}
 }
