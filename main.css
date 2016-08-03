@@ -111,15 +111,16 @@ button {
 #sentence {
 	font-size: 25px;
 	text-align: center;
-	margin: 100px auto 0px auto;
+	margin: 120px auto 0px auto;
 }
 
 #character {
-	width: 250px;
-	height: 350px;
+	width: 150px;
+	height: 200px;
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin: 60px auto 0px auto;
+	background-position: bottom;
+	margin: 50px auto 0px auto;
 }
 
 #beforescore {
