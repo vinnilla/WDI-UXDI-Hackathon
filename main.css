@@ -3,9 +3,42 @@ h1 {
 }
 
 body {
-	background-image: url("http://wallpapercave.com/wp/UTEF6XR.png");
-	background-position: 70% 70%;
-	background-repeat: repeat;
+	color: rgba(0,0,0,1);
+	background-image: url("images/background.png");
+	background-position: 32% 32%;
+	background-repeat: no-repeat;
+	background-color: rgba(0,115,0,0.56);	
+	font-family: 'Press Start 2P', cursive;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+button {
+	height: 50px;
+	font-size: 20px;
+}
+
+.background {
+	margin-top: 50px;
+}
+
+#one {
+	background-color: red;
+}
+
+#two {
+	background-color: orange;
+}
+
+#three {
+	background-color: yellow;
+}
+
+#four {
+	background-color: lightgreen;
+}
+
+#five {
+	background-color: lightblue;
 }
 
 .grade {
@@ -25,41 +58,49 @@ body {
 }
 
 .game {
+	font-family: 'Press Start 2P', cursive;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 	border: solid black 8px;
-	margin-top: 20px;
+	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
 	width: 750px;
 	height: 500px;
-	background-image: url("http://static.tumblr.com/171ea4dd15bf205c994daecad8959d54/skxeuni/EgUni6ony/tumblr_static_afy08s80ivc4gsgwgwgo0w84k.jpg");
+	background: url("images/game.jpg");
+	/*background-color: rgba(255,255,255,0.2);*/
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 130%;
 }
 
-.captured {
-	margin: 10px 10px 10px 10px;
-	/*border: solid black 1px;*/
-	/*font-family: 'Aldrich', sans-serif;*/
-	font-family: 'Quantico', sans-serif;
-	font-size: 25px;
-	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+.pokeball, .pokeballVowel {
+	width: 100px;
+	height: 100px;
+	background-image: url("images/pokeball.png");
+	background-size: contain;
+	opacity: 1;
+	line-height: 45px;
+	font-size: 15px;
+	color: white;
+	font-weight: bolder;
 }
 
 .pokeball {
-	margin-top: 350px;
+	margin-top: 100px;
   margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 }
 
 .pokeballButtons {
-	margin: 0 auto;
 	text-align: center;
+	margin: 0 auto;
 }
 
 .pokeballVowel {
+	font-family: 'Press Start 2P', cursive;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 	margin-top: 20px;
   margin-left: 25px;
 	margin-right: 25px;
@@ -67,3 +108,29 @@ body {
 	display: inline-block;
 	text-align: center;
 }
+
+#sentence {
+	font-size: 25px;
+	text-align: center;
+	margin: 70px auto 0px auto;
+}
+
+#character {
+	width: 100px;
+	height: 100px;
+  /*background-size: 7em; */
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin: 100px auto 0px auto;
+}
+
+#beforescore {
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#missed {
+	margin-left: 47px;
+}
+

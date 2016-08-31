@@ -2,23 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Project</title>
+	<title>Squirtle Wordles</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'> -->
-	<link href='https://fonts.googleapis.com/css?family=Quantico:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <div class="background">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="grade">
-				<button>1st Grade</button>
-				<button>2nd Grade</button>
-				<button>3rd Grade</button>
-				<button>4th Grade</button>
-				<button>5th Grade</button>
+				<button id="one">1st Grade</button>
+				<button id="two">2nd Grade</button>
+				<button id="three">3rd Grade</button>
+				<button id="four">4th Grade</button>
+				<button id="five">5th Grade</button>
+
 			</div>
 		</div>
 		<div class="row">
@@ -26,38 +25,27 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- Gamebox -->
-	<div class="game">
-		<div class="captured">
-			Captured:
-		</div>
-
-		<div class="pokeball">
-			  <img src="https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG" alt="pokeball" style="width:75px ;height:75px;">
-		</div>
+		<!-- Gamebox -->
+	<div class="container-fluid game">
+		<h3 id="beforescore">Captured: <span id="score">0</span></h3>
+		<h3 id="beforescore">Missed: <span id='missed'>0</span></h3>
+		<h1 id="sentence"></h1>
+		<div class="pokeball">START</div>
+		<div id="character"></div>
 	</div>
 
 	<!-- Vowel Buttons -->
-	<div class=pokeballButtons>
-		<div class="pokeballVowel">
-				<img src="https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG" alt="pokeball" style="width:75px ;height:75px;">
-		</div>
-		<div class="pokeballVowel">
-				<img src="https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG" alt="pokeball" style="width:75px ;height:75px;">
-		</div>
-		<div class="pokeballVowel">
-				<img src="https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG" alt="pokeball" style="width:75px ;height:75px;">
-		</div>
-		<div class="pokeballVowel">
-				<img src="https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG" alt="pokeball" style="width:75px ;height:75px;">
-		</div>
-		<div class="pokeballVowel">
-				<img src="https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG" alt="pokeball" style="width:75px ;height:75px;">
-		</div>
+	<div class="container-fluid pokeballButtons">
+		<div class="pokeballVowel">A</div>
+		<div class="pokeballVowel">E</div>
+		<div class="pokeballVowel">I</div>
+		<div class="pokeballVowel">O</div>
+		<div class="pokeballVowel">U</div>
 	</div>
 
 </div>
+	
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 	<script src="script.js"></script>
 </body>
 </html>
