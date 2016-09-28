@@ -203,8 +203,7 @@ function createSentence() {
 	check = verbs[verbIndex];
 	// counter++;
 	//remove character name and image from array
-	charNames.splice(subjectIndex,1);
-	charImages.splice(subjectIndex,1);
+	return subjectIndex
 }
 
 //selecting vowel
@@ -213,8 +212,8 @@ function retrieveVowel(e) {
 	vowel = e.target.innerHTML.toLowerCase();
 	var test = checkWord();
 	reward(test);
-	createSentence();
-	end();
+	var index = createSentence();
+	end(index);
 }
 
 //compare word to word bank
@@ -241,7 +240,9 @@ function reward(test) {
 	}
 }
 
-function end() {
+function end(index) {
+	charNames.splice(index,1);
+	charImages.splice(index,1);
 	if (charNames.length == 0) {
 		$vowelButtons.hide();
 		$character.hide();

@@ -1,7 +1,8 @@
 WDI+UXDI Collaborative Hackathon
 
-Squirtle Wordles
-https://vinnilla.github.io/WDI-UXDI-Hackathon/
+#[Squirtle Wordles](https://vinnilla.github.io/WDI-UXDI-Hackathon/)
+
+![Gameplay](http://i.imgur.com/WgRiunk.png)
 
 UX Designers: 
 	
@@ -15,4 +16,4 @@ Amanda: https://github.com/albeaudin,
 
 Corbin: https://github.com/corbout,
 
-Vincent: https://github.com/vinnilla
+Vincent: https://github.com/vinnilla, linkedin: vincentckhuang
